@@ -1,0 +1,51 @@
+{
+  "name": "ngx-castle-structure",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/ngx-castle-structure/src",
+  "prefix": "baz",
+  "tags": ["angular", "ui"],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "packages/ngx-castle-structure/ng-package.json",
+        "tailwindConfig": "packages/ngx-castle-structure/tailwind.config.js"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "packages/ngx-castle-structure/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "packages/ngx-castle-structure/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/ngx-castle-structure/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/ngx-castle-structure/**/*.ts",
+          "packages/ngx-castle-structure/**/*.html"
+        ]
+      }
+    }
+  }
+}

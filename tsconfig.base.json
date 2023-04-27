@@ -1,0 +1,37 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@bizappzone/ngx-castle-elements": [
+        "packages/ngx-castle-elements/src/index.ts"
+      ],
+      "@bizappzone/ngx-castle-forms": [
+        "packages/ngx-castle-forms/src/index.ts"
+      ],
+      "@bizappzone/ngx-castle-icons": [
+        "packages/ngx-castle-icons/src/index.ts"
+      ],
+      "@bizappzone/ngx-castle-structure": [
+        "packages/ngx-castle-structure/src/index.ts"
+      ],
+      "@bizappzone/ngx-castle-tables": [
+        "packages/ngx-castle-tables/src/index.ts"
+      ],
+      "@bizappzone/ngx-castle-ui": ["packages/ngx-castle-ui/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
