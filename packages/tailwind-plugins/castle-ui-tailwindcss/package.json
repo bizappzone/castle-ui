@@ -1,0 +1,25 @@
+{
+  "name": "@bizappzone/castle-ui-tailwindcss",
+  "version": "0.0.8-1",
+  "description": "castle ui utilities for creating ui components",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bizappzone/bizappzone.git"
+  },
+  "keywords": [
+    "castle-ui",
+    "tailwindcss",
+    "design-system",
+    "css"
+  ],
+  "author": "bizapzone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bizappzone/bizappzone/issues"
+  },
+  "homepage": "https://github.com/bizappzone/bizappzone#readme"
+}
