@@ -18,8 +18,6 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [
-    require('../../packages/tailwind-plugins/castle-ui-tailwindcss/src/index'),
-  ],
-  // plugins: [require('../../packages/tailwind-plugins/castle-ui-tailwindcss')],
+
+  plugins: [require('../../packages/tailwind-plugins/castle-ui-tailwindcss')],
 };

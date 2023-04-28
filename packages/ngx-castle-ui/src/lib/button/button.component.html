@@ -1,4 +1,20 @@
-<p class="bg-yellow-400">button workss!</p>
-<p class="core-btn">lib format @apply</p>
-<button class="baz-btn">baz button lib</button>
-<button class="baz-btn baz-btn-primary">baz button baz-btn-primary lib</button>
+<button id="{{ btnId }}" [type]="type" class="{{ finalClassApplied }} relative flex " title="{{ btnHelp }}"
+    (click)="click()" [disabled]="disabled">
+    <ng-container *ngIf="iconLeft">
+        <baz-icon class="inline-block align-middle" [iconId]="iconId" [iconName]="iconLeft"
+            [displayClass]="_iconDisplayClass" [displayType]="_iconDisplayType" [iconSize]="btnSize" iconAlign="left">
+        </baz-icon>
+    </ng-container>
+    <div class="inline-block">{{ btnLable }}</div>
+    <ng-container *ngIf="iconRight">
+        <baz-icon class="inline-block align-middle" [iconId]="iconId" [iconName]="iconRight"
+            [displayClass]="displayClass" [displayType]="displayType" [iconSize]="btnSize" iconAlign="left">
+        </baz-icon>
+    </ng-container>
+
+    <ng-container *ngIf="badgeLable">
+        <baz-badge inBadgeLable="{{ badgeLable }}" inBadgeDisplayClass="{{ badgeDisplayClass }}"
+            inBadgePosition="{{ badgeAlign }}">
+        </baz-badge>
+    </ng-container>
+</button>

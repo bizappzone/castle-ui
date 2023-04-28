@@ -25,35 +25,32 @@ module.exports = function buttonComponentsPlugin({ addComponents }) {
         {},
     },
     '.baz-btn-primary': {
-      '@apply bg-primary-5-color border border-primary-6-color hover:bg-primary-6-color text-on-primary-5-color':
+      '@apply bg-primary-500 border border-primary-600 hover:bg-primary-600 text-on-primary-500':
         // '@apply [var(--button-color)] hover:bg-green-900 text-white py-2 px-4 rounded':
         {},
     },
     '.baz-btn-primary__outline': {
-      '@apply bg-transparent border-2 border-primary-5-color text-primary-5-color text-lg rounded-lg hover:bg-primary-5-color hover:text-on-primary-5-color focus:border-4 focus:border-blue-300':
+      '@apply bg-transparent border-2 border-primary-500 text-primary-500 text-lg rounded-lg hover:bg-primary-500 hover:text-on-primary-500 focus:border-4 focus:border-blue-300':
         {},
     },
 
     '.baz-btn-secondary': {
-      '@apply bg-secondary-5-color hover:bg-secondary-4-color text-on-secondary-5-color':
+      '@apply bg-secondary-500 hover:bg-secondary-400 text-on-secondary-500':
         {},
     },
 
     '.baz-btn-accent': {
-      '@apply bg-accent-5-color hover:bg-accent-4-color text-on-accent-5-color':
-        {},
+      '@apply bg-accent-500 hover:bg-accent-400 text-on-accent-500': {},
     },
     '.baz-btn-warn': {
-      '@apply bg-warn-5-color hover:bg-warn-4-color text-on-warn-5-color': {},
+      '@apply bg-warn-500 hover:bg-warn-400 text-on-warn-500': {},
     },
 
     '.baz-btn-disable': {
-      '@apply bg-disable-5-color hover:bg-disable-4-color text-on-disable-5-color':
-        {},
+      '@apply bg-disable-500 hover:bg-disable-400 text-on-disable-500': {},
     },
     '.baz-btn-flat': {
-      '@apply bg-accent-5-color hover:bg-disable-4-color text-on-disable-5-color':
-        {},
+      '@apply bg-accent-500 hover:bg-disable-400 text-on-disable-500': {},
     },
   });
 };

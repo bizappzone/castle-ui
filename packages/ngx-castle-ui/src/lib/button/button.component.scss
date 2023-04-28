@@ -1,3 +1,152 @@
-.core-btn {
-  @apply bg-green-400;
+.base-btn {
+  @apply focus:ring-4 focus:ring-primary-400 text-center mr-2 mb-2 inline-flex;
+  @apply dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+}
+
+.btn-primary {
+  &-flat {
+    @apply focus:ring-4 focus:ring-primary-400 text-center mr-2 mb-2 inline-flex;
+    @apply dark:focus:ring-primary-dark-400;
+
+    @apply text-onprimary-500 bg-primary-500 hover:bg-primary-400 active:bg-primary-500;
+    @apply dark:text-onprimary-500 dark:bg-primary-dark-500 dark:hover:bg-primary-dark-400 dark:focus:ring-primary-dark-400 dark:active:bg-primary-dark-500;
+
+    &:hover > baz-icon > svg {
+      @apply bg-primary-400  fill-onprimary-400 #{!important};
+      @apply dark:bg-primary-dark-400 dark:fill-onprimary-dark-600 #{!important};
+    }
+  }
+
+  &-outline {
+    @apply focus:ring-4 focus:ring-primary-400 text-center mr-2 mb-2 inline-flex;
+    @apply dark:focus:ring-primary-dark-400;
+
+    @apply text-primary-500 hover:text-onprimary-500 border border-primary-500 hover:bg-primary-600;
+    @apply dark:border-primary-dark-500 dark:text-primary-dark-500 dark:hover:text-onprimary-dark-500 dark:hover:bg-primary-dark-500 dark:hover:border-primary-dark-600 dark:focus:ring-primary-dark-400 dark:active:bg-primary-dark-600;
+
+    > baz-icon > svg {
+      @apply border-opacity-0  #{!important};
+    }
+
+    &:hover > baz-icon > svg {
+      @apply fill-primary-500 border-opacity-0  #{!important};
+      @apply dark:fill-onprimary-dark-500 #{!important};
+    }
+  }
+}
+
+.btn-secondary {
+  &-flat {
+    @apply focus:ring-4 focus:ring-secondary-400 text-center mr-2 mb-2 inline-flex;
+    @apply dark:focus:ring-secondary-dark-400;
+
+    @apply text-onsecondary-500 bg-secondary-500 hover:bg-secondary-400;
+    @apply dark:bg-secondary-dark-500 dark:hover:bg-secondary-dark-400 dark:focus:ring-secondary-dark-400 dark:active:bg-secondary-dark-500;
+
+    &:hover > baz-icon > svg {
+      @apply bg-secondary-400  fill-onsecondary-400 #{!important};
+      @apply dark:bg-secondary-dark-400 dark:fill-onsecondary-dark-600 #{!important};
+    }
+  }
+  &-outline {
+    @apply focus:ring-4 focus:ring-secondary-400 text-center mr-2 mb-2 inline-flex;
+    @apply dark:focus:ring-secondary-dark-400;
+
+    @apply text-secondary-500 hover:text-onsecondary-500 border border-secondary-500 hover:bg-secondary-600;
+    @apply dark:border-secondary-dark-500 dark:text-secondary-dark-500 dark:hover:text-onsecondary-dark-500 dark:hover:bg-secondary-dark-500 dark:hover:border-secondary-dark-600 dark:focus:ring-secondary-dark-400 dark:active:bg-secondary-dark-600;
+
+    > baz-icon > svg {
+      @apply border-opacity-0  #{!important};
+    }
+
+    &:hover > baz-icon > svg {
+      @apply fill-onsecondary-600 #{!important};
+      @apply dark:fill-onsecondary-dark-600 #{!important};
+    }
+  }
+}
+
+.btn-accent {
+  &-flat {
+    @apply focus:ring-4 focus:ring-accent-400 text-center mr-2 mb-2 inline-flex;
+    @apply dark:focus:ring-accent-dark-400;
+
+    @apply text-onaccent-500 bg-accent-500 hover:bg-accent-400;
+    @apply dark:bg-accent-dark-500 dark:hover:bg-accent-dark-400 dark:focus:ring-accent-dark-400 dark:active:bg-accent-dark-500;
+
+    &:hover > baz-icon > svg {
+      @apply bg-accent-400  fill-onaccent-400 #{!important};
+      @apply dark:bg-accent-dark-400 dark:fill-onaccent-dark-600 #{!important};
+    }
+  }
+  &-outline {
+    @apply focus:ring-4 focus:ring-accent-400 text-center mr-2 mb-2 inline-flex;
+    @apply dark:focus:ring-accent-dark-400;
+
+    @apply text-accent-500 hover:text-onaccent-500 border border-accent-500 hover:bg-accent-600;
+    @apply dark:border-accent-dark-500 dark:text-accent-dark-500 dark:hover:text-onaccent-dark-500 dark:hover:bg-accent-dark-500 dark:hover:border-accent-dark-600 dark:focus:ring-accent-dark-400 dark:active:bg-accent-dark-600;
+
+    &:hover > baz-icon > svg {
+      @apply fill-onaccent-400 #{!important};
+      @apply dark:fill-onaccent-dark-600 #{!important};
+    }
+  }
+}
+
+.btn-warn {
+  &-flat {
+    @apply focus:ring-4 focus:ring-warn-400 text-center mr-2 mb-2 inline-flex;
+    @apply dark:focus:ring-warn-dark-400;
+
+    @apply text-onwarn-500 bg-warn-500 hover:bg-warn-400 active:bg-warn-500;
+    @apply dark:text-onwarn-500 dark:bg-warn-dark-500 dark:hover:bg-warn-dark-400 dark:focus:ring-warn-dark-400 dark:active:bg-warn-dark-500;
+
+    &:hover > baz-icon > svg {
+      @apply bg-warn-400  fill-onwarn-400 #{!important};
+      @apply dark:bg-warn-dark-400  dark:fill-onwarn-dark-600 #{!important};
+    }
+  }
+
+  &-outline {
+    @apply focus:ring-4 focus:ring-warn-400 text-center mr-2 mb-2 inline-flex;
+    @apply dark:focus:ring-warn-dark-400;
+
+    @apply text-warn-500 hover:text-onwarn-500 border border-warn-500 hover:bg-warn-600;
+    @apply dark:border-warn-dark-500 dark:text-warn-dark-500 dark:hover:text-onwarn-dark-500 dark:hover:bg-warn-dark-500 dark:hover:border-warn-dark-600 dark:focus:ring-warn-dark-400 dark:active:bg-warn-dark-600;
+
+    > baz-icon > svg {
+      @apply border-opacity-0  #{!important};
+    }
+
+    &:hover > baz-icon > svg {
+      @apply fill-warn-500 #{!important};
+      @apply dark:fill-onwarn-dark-500 #{!important};
+    }
+  }
+}
+
+.btn-muted {
+  &-flat {
+    @apply focus:ring-4 focus:ring-muted-400 text-center mr-2 mb-2 inline-flex;
+    @apply dark:focus:ring-muted-dark-400;
+
+    @apply text-muted-600 bg-muted-400;
+    @apply dark:bg-muted-dark-500 dark:focus:ring-muted-dark-400;
+  }
+  &-outline {
+    @apply focus:ring-4 focus:ring-muted-400 text-center mr-2 mb-2 inline-flex;
+    @apply dark:focus:ring-muted-dark-400;
+
+    @apply text-muted-500 border border-muted-500;
+    @apply dark:border-muted-dark-500 dark:text-muted-dark-500 dark:focus:ring-muted-dark-400 dark:active:bg-muted-dark-600;
+
+    > baz-icon > svg {
+      @apply border-opacity-0  #{!important};
+    }
+
+    &:hover > baz-icon > svg {
+      @apply fill-onmuted-400 #{!important};
+      @apply dark:fill-onmuted-dark-600 #{!important};
+    }
+  }
 }

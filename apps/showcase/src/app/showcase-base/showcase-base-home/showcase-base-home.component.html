@@ -1,4 +1,104 @@
 <p class="bg-gray-400">showcase-base-home works!</p>
-<baz-button></baz-button>
+<!-- <baz-title title="Primary Buttons" displayClass="secondary" titleSize="med" displayType="flat"></baz-title> -->
 
-<button class="baz-btn">baz button app</button>
+<baz-button btnId="1" btnLable="Primary is so cool" displayClass="primary" displayType="flat" iconDisplayClass=""
+    btnMode="click" iconLeft="save" btnSize="small" btnRadius="med" (btnClick)="onClick($event)"></baz-button>
+
+<baz-button btnId="2" btnLable="Primary med" displayClass="primary" displayType="flat" iconDisplayClass=""
+    btnMode="click" iconRight="edit" btnSize="med" btnRadius="med"></baz-button>
+
+<baz-button btnId="3" btnLable="Primary Large" displayClass="primary" displayType="flat" iconDisplayClass=""
+    badgeLable="new" badgeDisplayClass="warn" badgeAlign="top" btnMode="click" iconLeft="edit" btnSize="large"
+    btnRadius="med"></baz-button>
+<br />
+<baz-button btnId="3" btnLable="Primary Large" displayClass="primary" displayType="flat" iconDisplayClass=""
+    badgeLable="new on right" badgeDisplayClass="warn" badgeAlign="top-right" btnMode="click" iconLeft="edit"
+    btnSize="large" btnRadius="med"></baz-button>
+<br />
+
+<baz-button btnId="4" btnLable="Primary outline small" displayClass="primary" displayType="outline" iconDisplayClass=""
+    btnMode="click" btnSize="small" btnRadius="med"></baz-button>
+
+<baz-button btnId="5" btnLable="Primary outline med" displayClass="primary" displayType="outline" iconDisplayClass=""
+    btnMode="click" btnSize="med" btnRadius="med"></baz-button>
+
+<baz-button btnId="6" btnLable="Primary outline Large" displayClass="primary" displayType="outline" iconDisplayClass=""
+    btnMode="click" btnSize="large" btnRadius="med"></baz-button>
+
+<!-- Secondary -->
+
+<!-- <baz-title title="Secondary buttons" displayClass="secondary" titleSize="med" displayType="flat"></baz-title> -->
+
+<baz-button btnId="1" btnLable="secondary small" displayClass="secondary" displayType="flat" iconDisplayClass=""
+    badgeLable="9" badgeDisplayClass="primary" badgeAlign="inline" btnMode="click" btnSize="small"
+    btnRadius="med"></baz-button>
+
+<baz-button btnId="2" btnLable="secondary med" displayClass="secondary" displayType="flat" iconDisplayClass=""
+    btnMode="click" btnSize="med" btnRadius="med"></baz-button>
+
+<baz-button btnId="3" btnLable="secondary Large" displayClass="secondary" displayType="flat" iconDisplayClass=""
+    btnMode="click" btnSize="large" btnRadius="med"></baz-button>
+<br />
+
+<baz-button btnId="4" btnLable="secondary outline small" displayClass="secondary" displayType="outline"
+    iconDisplayClass="" btnMode="click" btnSize="small" btnRadius="med"></baz-button>
+
+<baz-button btnId="5" btnLable="secondary outline med" displayClass="secondary" displayType="outline"
+    iconDisplayClass="" btnMode="click" btnSize="med" btnRadius="med"></baz-button>
+
+<baz-button btnId="6" btnLable="secondary outline Large" displayClass="secondary" displayType="outline"
+    iconDisplayClass="" btnMode="click" btnSize="large" btnRadius="med"></baz-button>
+
+<!-- Accent -->
+
+<!-- <baz-title title="Accent buttons" displayClass="secondary" titleSize="med" displayType="flat"></baz-title> -->
+
+<baz-button btnId="1" btnLable="Accent flat med" displayClass="accent" displayType="flat" iconDisplayClass=""
+    btnMode="click" btnSize="med" btnRadius="med"></baz-button>
+<baz-button btnId="1" btnLable="Accent Outline" displayClass="accent" displayType="outline" iconDisplayClass=""
+    btnMode="click" btnSize="med" btnRadius="med"></baz-button>
+
+<!-- <baz-title title="Warn buttons" displayClass="secondary" titleSize="med" displayType="flat"></baz-title> -->
+
+<baz-button btnId="1" btnLable="warn flat med" displayClass="warn" displayType="flat" iconDisplayClass=""
+    btnMode="click" btnSize="med" btnRadius="med"></baz-button>
+<baz-button btnId="1" btnLable="warn Outline" displayClass="warn" displayType="outline" iconDisplayClass=""
+    btnMode="click" btnSize="med" btnRadius="med"></baz-button>
+
+<!-- <baz-title title="Muted buttons" displayClass="secondary" titleSize="med" displayType="flat"></baz-title> -->
+
+<baz-button btnId="1" btnLable="muted flat med" displayClass="muted" displayType="flat" iconDisplayClass=""
+    btnMode="click" btnSize="med" btnRadius="med"></baz-button>
+<baz-button btnId="1" btnLable="muted Outline" displayClass="muted" displayType="outline" iconDisplayClass=""
+    btnMode="click" btnSize="med" btnRadius="med"></baz-button>
+
+<!-- Secondary Icons -->
+
+<!-- <baz-title title="Buttons with icons" displayClass="secondary" titleSize="med" displayType="flat"></baz-title> -->
+
+<baz-button btnId="1" btnLable="Icon small" displayClass="secondary" displayType="flat" iconDisplayClass=""
+    badgeLable="" badgeDisplayClass="" btnMode="click" iconLeft="save" btnSize="small" btnRadius="med"></baz-button>
+
+<baz-button btnId="2" btnLable="Icon med" displayClass="secondary" displayType="flat" iconDisplayClass=""
+    btnMode="click" iconLeft="save" btnSize="med" btnRadius="med"></baz-button>
+
+<baz-button btnId="3" btnLable="Icon Large" displayClass="secondary" displayType="flat" iconDisplayClass=""
+    btnMode="click" iconLeft="save" btnSize="large" btnRadius="med"></baz-button>
+
+<baz-button btnId="3" btnLable="" displayClass="secondary" displayType="flat" iconDisplayClass="" btnMode="click"
+    iconLeft="save" btnSize="large" btnRadius="large"></baz-button>
+<br />
+
+<baz-button btnId="4" btnLable="Icon " displayClass="secondary" displayType="outline" iconDisplayClass=""
+    btnMode="click" iconRight="search" btnSize="small" btnRadius="med"></baz-button>
+
+<baz-button btnId="5" btnLable="icon outline med" displayClass="secondary" displayType="outline" iconDisplayClass=""
+    btnMode="click" iconRight="search" btnSize="med" btnRadius="med"></baz-button>
+
+<baz-button btnId="6" btnLable="Suffix outline Large" displayClass="secondary" displayType="outline" iconDisplayClass=""
+    btnMode="click" iconRight="search" btnSize="large" btnRadius="med"></baz-button>
+<baz-button btnId="6" btnLable="" displayClass="secondary" displayType="outline" iconDisplayClass="" btnMode="click"
+    iconRight="search" btnSize="large" btnRadius="large"></baz-button>
+
+<!-- <baz-title title="Gradient buttons" displayClass="secondary" titleSize="med" displayType="flat"></baz-title> -->
+<!-- <p>TBD</p> -->

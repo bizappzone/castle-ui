@@ -1,0 +1,92 @@
+.badge-base {
+  @apply inline-flex justify-center items-center px-2 py-1 text-xs font-bold leading-none rounded-full;
+}
+
+.badge-base-top {
+  @extend .badge-base;
+  @apply absolute transform -top-1 -left-2;
+}
+.badge-base-top-right {
+  @extend .badge-base;
+  @apply absolute transform -top-2 -right-10;
+}
+
+.badge-base-inline {
+  @extend .badge-base;
+  @apply ml-2;
+}
+
+.badge-primary {
+  &-top {
+    @extend .badge-base-top;
+    @apply text-onprimary-500  bg-primary-500;
+    @apply dark:text-onprimary-dark-500  dark:bg-primary-dark-500;
+  }
+  &-top-right {
+    @extend .badge-base-top-right;
+    @apply text-onprimary-500  bg-primary-500;
+    @apply dark:text-onprimary-dark-500  dark:bg-primary-dark-500;
+  }
+  &-inline {
+    @extend .badge-base-inline;
+    @apply text-onprimary-500  bg-primary-500;
+    @apply dark:text-onprimary-dark-500  dark:bg-primary-dark-500;
+  }
+}
+
+.badge-secondary {
+  &-top {
+    @extend .badge-base-top;
+    @apply text-onsecondary-500  bg-secondary-500;
+    @apply dark:text-onsecondary-dark-500  dark:bg-secondary-dark-500;
+  }
+  &-inline {
+    @extend .badge-base-inline;
+    @apply text-onsecondary-500  bg-secondary-500;
+    @apply dark:text-onsecondary-dark-500  dark:bg-secondary-dark-500;
+  }
+}
+
+.badge-accent {
+  &-top {
+    @extend .badge-base-top;
+    @apply text-onaccent-500  bg-accent-500;
+    @apply dark:text-onaccent-dark-500  dark:bg-accent-dark-500;
+  }
+  &-inline {
+    @extend .badge-base-inline;
+    @apply text-onaccent-500  bg-accent-500;
+    @apply dark:text-onaccent-dark-500  dark:bg-accent-dark-500;
+  }
+}
+
+.badge-warn {
+  &-top {
+    @extend .badge-base-top;
+    @apply text-onwarn-500  bg-warn-500;
+    @apply dark:text-onwarn-dark-500  dark:bg-warn-dark-500;
+  }
+  &-top-right {
+    @extend .badge-base-top-right;
+    @apply text-onwarn-500  bg-warn-500;
+    @apply dark:text-onwarn-dark-500  dark:bg-warn-dark-500;
+  }
+  &-inline {
+    @extend .badge-base-inline;
+    @apply text-onwarn-500  bg-warn-500;
+    @apply dark:text-onwarn-dark-500  dark:bg-warn-dark-500;
+  }
+}
+
+.badge-muted {
+  &-top {
+    @extend .badge-base-top;
+    @apply text-onmuted-500  bg-muted-500;
+    @apply dark:text-onmuted-dark-500  dark:bg-muted-dark-500;
+  }
+  &-inline {
+    @extend .badge-base-inline;
+    @apply text-onmuted-500  bg-muted-500;
+    @apply dark:text-onmuted-dark-500  dark:bg-muted-dark-500;
+  }
+}

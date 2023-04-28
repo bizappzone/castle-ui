@@ -3,3 +3,10 @@
 @tailwind utilities;
 
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --theme-color: #d08052;
+  --primary-color: #ee24a0e8;
+  --secondary-color: rgb(18, 25, 52);
+  --accent-color: rgb(18, 223, 52);
+}
