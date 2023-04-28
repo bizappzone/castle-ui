@@ -1,10 +1,7 @@
 {
   "name": "@bizappzone/ngx-castle-ui",
-  "version": "0.0.6",
-  "peerDependencies": {
-    "@angular/common": "^14.0.0",
-    "@angular/core": "^14.0.0"
-  },
+  "version": "0.0.7",
+  "peerDependencies": {},
   "dependencies": {
     "tslib": "^2.3.0"
   },
